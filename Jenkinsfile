@@ -34,7 +34,7 @@ pipeline {
         stage('Docker Run') {
             steps {
                 sh 'docker rm -f cont1 || true'
-                sh 'docker run -d --name cont1 -p 8076:80 sri'
+                sh 'docker run -d --name cont1 -p 8000:80 sri'
             }
         }
 
